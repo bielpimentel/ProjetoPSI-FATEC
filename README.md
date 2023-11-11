@@ -8,5 +8,5 @@
 
 - Arthur Rosa
 - Gabriel Pimentel de Carvalho
-- Lucas Martins Vargas Amaral
+- Lucas Martins Vargas do Amaral
 - Yan Matos Kairalla
