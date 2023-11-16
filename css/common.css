@@ -88,7 +88,7 @@ header {
 }
 
 header nav {
-    flex-grow: 3;
+    flex-grow: 2;
     flex-shrink: 0;
 }
 
