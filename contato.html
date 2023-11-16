@@ -12,79 +12,70 @@
 </head>
 <body>
 
-    <!-- <div>
-    <div class="login-caixa">
+    <div>
+        <div class="login-caixa">
         
-        <div class="login">
-            <div class="div-sair">
-                <div class="sair" onclick="toggleLogin()">X</div>
-            </div>
-
-            <div class="login-texto">
-                <h1>Efetuar Login</h1>
-
-                <p>Acesse sua conta GameBooster</p>
-            </div>
-
-            <div class="continuar-ops">
-                <div class="continuar">
-                    <img src="imagens/google.png" alt="Logo do Google">
-                    <p>Continuar com o Google</p>
+            <div class="login">
+                <div class="div-sair">
+                    <div class="sair" onclick="toggleLogin()">X</div>
                 </div>
 
-                <div class="continuar">
-                    <img src="imagens/facebook.png" alt="Logo do Facebook.">
-                    <p>Continuar com o Facebook</p>
+                <div class="login-texto">
+                    <h1>Efetuar Login</h1>
+
+                    <p>Acesse sua conta GameBooster</p>
                 </div>
 
-                <div class="continuar">
-                    <img src="imagens/discord-icon.png" alt="Logo do Discord.">
-                    <p>Continuar com o Discord</p>
-                </div>
-            </div>
-
-            <div class="centraliza-log">
-                <div class="div-ou">
-                    <div></div>
-                    
-                    <p>ou</p>
-
-                    <div></div>
-                </div>
-            </div>
-            
-            <div class="email-senha">
-                
-                <form action="#" class="form">
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail ou login">
-
-                    <input type="password" name="senha" id="senha" maxlength="14" placeholder="Digite sua senha">
-
-                    <div class="confirmar">
-                      <button type="submit">Confirmar</button>
+                <div class="continuar-ops">
+                    <div class="continuar">
+                        <img src="imagens/google.png" alt="Logo do Google">
+                        <p>Continuar com o Google</p>
                     </div>
-                </form>
 
-                <p class="esq-sen">Esqueceu a senha?</p>
+                    <div class="continuar">
+                        <img src="imagens/facebook.png" alt="Logo do Facebook.">
+                        <p>Continuar com o Facebook</p>
+                    </div>
 
+                    <div class="continuar">
+                        <img src="imagens/discord-icon.png" alt="Logo do Discord.">
+                        <p>Continuar com o Discord</p>
+                    </div>
+                </div>
+
+                <div class="centraliza-log">
+                    <div class="div-ou">
+                        <div></div>
+                        
+                        <p>ou</p>
+
+                        <div></div>
+                    </div>
+                </div>
+                
+                <div class="email-senha">
+                    
+                    <form action="#" class="form">
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail ou login">
+
+                        <input type="password" name="senha" id="senha" maxlength="14" placeholder="Digite sua senha">
+
+                        <div class="confirmar">
+                        <button type="submit">Confirmar</button>
+                        </div>
+                    </form>
+
+                    <p class="esq-sen">Esqueceu a senha?</p>
+
+                </div>
+
+                <div class="confirmar">
+                    <p class="nao-conta">Não possui uma conta? <a class="cadastre" href="#">Cadastre-se</a></p>
+                </div>
+                
             </div>
-
-            <div class="confirmar">
-                <p class="nao-conta">Não possui uma conta? <a class="cadastre" href="#">Cadastre-se</a></p>
-            </div>
-            
         </div>
     </div>
-  </div> -->
-
-  <!-- =============== MENU AUXILIAR (ACESSIBILIDADE) =============== -->
-    <!-- <div class="menu-auxiliar">
-        <div class="box-aux">
-            <a href="#principal" class="item-auxiliar">Ir para o conteúdo</a>
-            <a href="#rodape" class="item-auxiliar">Ir para o rodapé</a>
-        </div>
-    </div> -->
-  <!-- ============================================================== -->
 
   <header>  
     <div class="container-header">
@@ -100,7 +91,7 @@
                 <li class="container-servicos">
                     <span class="servicos">Serviços</span>
                     <ul class="caixa-servicos">
-                        <li><a href="#pxgBox" class="servico borda-f">PokeXGames</a></li>
+                        <li><a href="contas.html" class="servico borda-f">PokeXGames</a></li>
                         <li><a href="lol.html" class="servico borda-f">League of Legends</a></li>
                         <li><a href="contas.html" class="servico borda-f">Contas</a></li>
                         <li><a href="precos.html" class="servico men">Preços</a></li>
@@ -135,7 +126,7 @@
             
                 <ul class="menu">
                     <li class="menu-ham-tipog">
-                        <a href="#"><img src="imagens/tipografia.png" alt="GameBooster escrito de forma estilizada."></a>
+                        <a href="index.html"><img src="imagens/tipografia.png" alt="GameBooster escrito de forma estilizada."></a>
 
                         <div class="menu-x">
                             <input id="caixa-invisivel-2" type="checkbox" >
@@ -146,20 +137,21 @@
                             </div>
                         </div>
                     </li>
+                    <input id="invisivel-servicos" type="checkbox">
                     <li class="container-servicos-2">
-                        <!-- <input id="invisivel-servicos" type="checkbox"> -->
-                        <div id="serv-mob">
-                            <span class="servicos-ham">Serviços:</span>
-                            <ul class="caixa-servicos-2">
-                                <li class="servicosabcd" id="servico-a"><a href="#">PokeXGames</a></li>
-                                <li class="servicosabcd" id="servico-b"><a href="lol.html">League of Legends</a></li>
-                                <li class="servicosabcd" id="servico-c"><a href="#">Tibia</a></li>
-                                <li class="servicosabcd" id="servico-d"><a href="#">Contas</a></li>
-                            </ul>
-                        </div>
+                        <span class="servicos-ham">Serviços -></span>
+                        <ul class="caixa-servicos-2">
+                            <li class="servicosabcd" id="servico-a"><a href="contas.html">PokeXGames</a></li>
+                            <li class="servicosabcd" id="servico-b"><a href="lol.html">League of Legends</a></li>
+                            <li class="servicosabcd" id="servico-c"><a href="contas.html">Contas</a></li>
+                            <!-- <li class="servicosabcd" id="servico-d"><a href="contas.html">Contas</a></li> -->
+                        </ul>
                     </li>
                     <li class="margem"></li>
-                    <li class="brilinho"><a href="precos.html">Preços</a></li>
+                    <li class="margem2"></li>
+                    <!-- <li class="brilinho"><a href="#">Intermédios</a></li> -->
+                    <li><a href="precos.html">Preços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                     <li><a href="avaliacoes.html">Avaliações</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li class="menu-ham-log">
