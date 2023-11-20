@@ -1,6 +1,31 @@
-function toggleLogin() {
-    document.querySelector(".login-caixa").classList.toggle("open");
-}
+// function toggleLogin() {
+//     document.querySelector(".login-caixa").classList.toggle("open");
+// }
+
+const botaoLogin = document.getElementById("botao-login");
+const loginResp = document.getElementById("botao-login-ham");
+const fechar = document.querySelector(".sair");
+
+botaoLogin.addEventListener('click', () => {
+    const caixaLogin = document.querySelector(".login-caixa");
+
+    caixaLogin.classList.toggle("open");
+
+});
+
+loginResp.addEventListener('click', () => {
+    const caixaLogin = document.querySelector(".login-caixa");
+
+    caixaLogin.classList.toggle("open");
+
+});
+
+fechar.addEventListener('click', () => {
+    const caixaLogin = document.querySelector(".login-caixa");
+
+    caixaLogin.classList.toggle("open");
+
+});
 
 document.addEventListener("DOMContentLoaded", function() {
     

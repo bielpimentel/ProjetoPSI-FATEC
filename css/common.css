@@ -238,7 +238,7 @@ li.container-contas:hover .caixa-contas {
 }
 
 
-/* Menu Celular */
+/* Menu Responsivo */
 
 .nav-cel {
     display: none;
@@ -463,7 +463,7 @@ li.container-contas:hover .caixa-contas {
     }
 
     to {
-        margin-top: 155px;
+        margin-top: 115px;
         animation-play-state: paused;
     }
 }
@@ -476,7 +476,7 @@ li.container-contas:hover .caixa-contas {
 
 @keyframes margem-menor {
     from {
-        margin: 155px;
+        margin: 115px;
     }
     to {
         margin: 0;
@@ -623,32 +623,30 @@ li.container-contas:hover .caixa-contas {
 
 /* Ínicio login */
 
-
 .login-caixa {
     position: fixed;
-    display: none;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.2);
     z-index: 100;
-}
-  
-.login-caixa.open {
-    display: flex;
     animation: mostrar-login-caixa 1s;
 }
-  
+
+.open {
+    display: none;
+}
+
 @keyframes mostrar-login-caixa {
     0% {
-      opacity: 0;
+    opacity: 0;
     }
     100% {
-      opacity: 1;
+    opacity: 1;
     }
 }
-  
+
 .login {
     height: 600px;
     width: 390px;
@@ -656,12 +654,12 @@ li.container-contas:hover .caixa-contas {
     background: #D7C8C8F2;
     border-radius: 10px;
 }
-  
+
 .div-sair {
     display: flex;
     justify-content: flex-end
 }
-  
+
 .sair {
     font-family: sans-serif;
     color: #9B9B9B;
@@ -670,32 +668,32 @@ li.container-contas:hover .caixa-contas {
     padding: 5px 5px 0px 0px;
     cursor: pointer;
 }
-  
+
 .login-texto {
     margin-bottom: 25px;
 }
-  
+
 .login-texto h1 {
     color: #222222;
     font-size: 2rem;
     text-align: center;
     margin: 0px 0px 7px 0px;
 }
-  
+
 .login-texto p {
     color: #606060;
     font-size: 1.125rem;
     text-align: center;
     margin: 0px;
 }
-  
+
 .continuar-ops {
     display: flex;
     row-gap: 15px;
     align-items: center;
     flex-direction: column;
 }
-  
+
 .continuar {
     height: 40px;
     width: 324px;
@@ -707,49 +705,49 @@ li.container-contas:hover .caixa-contas {
     border-radius: 5px;
     cursor: pointer;
 }
-  
+
 .continuar img {
     max-width: 100%;
     height: 22px;
     padding-left: 10px;
 }
-  
+
 .continuar p, .div-ou p {
     margin: 0px;
 }
-  
+
 .centraliza-log {
     max-width: 324px;
     margin: 30px auto;
 }
-  
+
 .email-senha, .confirmar {
     max-width: 324px;
     margin: 0 auto;
 }
-  
+
 .div-ou {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-  
+
 .div-ou div {
     width: 140px;
     border: 1px solid #A5A5A5;
 }
-  
+
 .div-ou p {
     font-size: 0.875rem;
 }
-  
+
 .email-senha form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 15px;
 }
-  
+
 .email-senha form input {
     padding: 0 10px;
     margin: 0;
@@ -760,7 +758,7 @@ li.container-contas:hover .caixa-contas {
     border: 1px solid #999999;
     border-radius: 5px;
 }
-  
+
 .esq-sen {
     color: #4F4F4F;
     margin: 7px 0;
@@ -769,7 +767,7 @@ li.container-contas:hover .caixa-contas {
     text-align: right;
     cursor: pointer;
 }
-  
+
 .confirmar button {
     margin: 14px 0px 10px 0px;
     background-color: #FF2400;
@@ -783,14 +781,14 @@ li.container-contas:hover .caixa-contas {
     width: 324px;
     cursor: pointer;
 }
-  
+
 .nao-conta {
     margin: 0;
     font-size: 1.125rem;
     color: #545454;
     font-weight: 500;
 }
-  
+
 .nao-conta a {
     color: #FF2400;
 }
