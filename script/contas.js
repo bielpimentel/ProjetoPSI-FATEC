@@ -1,5 +1,10 @@
 const dados = document.getElementById('form-dados');
 const main = document.querySelector('main');
+const comprar = document.querySelector('.botao-comprar');
+
+comprar.addEventListener('click', (event) => {
+  event.target.parentElement.parentElement.remove();
+})
 
 dados.addEventListener('submit', (event) => {
 
@@ -59,6 +64,13 @@ dados.addEventListener('submit', (event) => {
       listaAdicionais.appendChild(info);
     }
   });
+
+  //------CRIAÇÃO DO BOTÃO DE COMPRA PARA A CONTA ANUNCIADA------//
+  const comprar = contaContainer.querySelector('.botao-comprar');
+
+  comprar.addEventListener('click', (event) => {
+    event.target.parentElement.parentElement.remove();
+  })
 
   dados.reset(); // Limpa os dados do formulário
 });
