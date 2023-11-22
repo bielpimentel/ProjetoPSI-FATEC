@@ -54,26 +54,23 @@
                 </div>
                 
                 <div class="email-senha">
-                    
-                    <form action="#" class="form">
+                    <form action="#" class="form" id="login-form">
                         <input type="email" name="email" id="email" placeholder="Digite seu e-mail ou login">
 
                         <input type="password" name="senha" id="senha" maxlength="14" placeholder="Digite sua senha">
+
+
+                        <p class="esq-sen">Esqueceu a senha?</p>
+
+                        <div class="confirmar">
+                            <button type="submit">Confirmar</button>
+                        </div>
+                        <div class="confirmar">
+                            <p class="nao-conta">Não possui uma conta? <a class="cadastre" href="#">Cadastre-se</a></p>
+                        </div>
                     </form>
-
-                    <p class="esq-sen">Esqueceu a senha?</p>
-
+                    <img src="/imagens/ZKZg.gif" alt="" class="loading-gif"/>
                 </div>
-
-                <div class="confirmar">
-                    <button>Confirmar</button>
-                </div>
-
-                <div class="confirmar">
-                    <p class="nao-conta">Não possui uma conta? <a class="cadastre" href="#">Cadastre-se</a></p>
-                </div>
-                
-            </div>
         </div>
     </div>
 
@@ -262,7 +259,7 @@
         </div>
     </div>
   </footer> 
-  
+  <script src="script/login.js" type="module"></script>
 </body>
 
 </html>

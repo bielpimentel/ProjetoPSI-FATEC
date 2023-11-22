@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -7,12 +8,14 @@
     <link rel="stylesheet" href="css/home.css">
     <script src="script/script.js" defer></script>
     <script src="script/home.js"></script>
+
     <title>GameBooster</title>
 </head>
+
 <body>
     <div>
         <div class="login-caixa open">
-            
+
             <div class="login">
                 <div class="div-sair">
                     <div class="sair">X</div>
@@ -44,48 +47,47 @@
                 <div class="centraliza-log">
                     <div class="div-ou">
                         <div></div>
-                        
+
                         <p>ou</p>
-    
+
                         <div></div>
                     </div>
                 </div>
-                
+
                 <div class="email-senha">
-                    
-                    <form action="#" class="form">
+                    <form action="#" class="form" id="login-form">
                         <input type="email" name="email" id="email" placeholder="Digite seu e-mail ou login">
 
                         <input type="password" name="senha" id="senha" maxlength="14" placeholder="Digite sua senha">
+
+
+                        <p class="esq-sen">Esqueceu a senha?</p>
+
+                        <div class="confirmar">
+                            <button type="submit">Confirmar</button>
+                        </div>
+                        <div class="confirmar">
+                            <p class="nao-conta">Não possui uma conta? <a class="cadastre" href="#">Cadastre-se</a></p>
+                        </div>
                     </form>
-
-                    <p class="esq-sen">Esqueceu a senha?</p>
-
+                    <img src="/imagens/ZKZg.gif" alt="" class="loading-gif"/>
                 </div>
 
-                <div class="confirmar">
-                    <button>Confirmar</button>
-                </div>
-
-                <div class="confirmar">
-                    <p class="nao-conta">Não possui uma conta? <a class="cadastre" href="#">Cadastre-se</a></p>
-                </div>
-                
             </div>
         </div>
     </div>
 
-    <header>  
+    <header>
         <div class="container-header">
             <div class="logo-header">
                 <a class="logo-cv" href="index.html">
                     <img class="logo-cv" src="imagens/logo-cv.png" alt="Logo da Gamebooster">
                 </a>
             </div>
-    
+
             <!-- ========== MENU DESKTOP (VERSÃO DO PROJETO FINAL) ========== -->
             <nav class="nav-comp">
-                <ul class="itens-nav">    
+                <ul class="itens-nav">
                     <li class="container-servicos">
                         <span class="servicos">Serviços</span>
                         <ul class="caixa-servicos">
@@ -108,27 +110,28 @@
                 </ul>
             </nav>
             <!-- ============================================================= -->
-    
+
             <!-- ========== MENU RESPONSIVO (VERSÃO DO PROJETO FINAL) ========== -->
-    
+
             <nav class="nav-cel">
                 <div class="menu-ham">
-                
-                    <input id="caixa-invisivel" type="checkbox">       
-    
+
+                    <input id="caixa-invisivel" type="checkbox">
+
                     <div class="fatias">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                
+
                     <ul class="menu">
                         <li class="menu-ham-tipog">
-                            <a href="index.html"><img src="imagens/tipografia.png" alt="GameBooster escrito de forma estilizada."></a>
-    
+                            <a href="index.html"><img src="imagens/tipografia.png"
+                                    alt="GameBooster escrito de forma estilizada."></a>
+
                             <div class="menu-x">
-                                <input id="caixa-invisivel-2" type="checkbox" >
-    
+                                <input id="caixa-invisivel-2" type="checkbox">
+
                                 <div class="x-ham">
                                     <span class="x1"></span>
                                     <span class="x2"></span>
@@ -159,9 +162,9 @@
                     </ul>
                 </div>
             </nav>
-            
+
             <!-- ============================================================= -->
-            
+
         </div>
     </header>
 
@@ -169,12 +172,15 @@
         <section class="container">
             <div class="parte-esq">
                 <h1>ALCANCE SEUS OBJETIVOS COM A NOSSA EQUIPE!</h1>
-    
-                <p>Profissionais preparados para realizar o serviço desejado no menor prazo, com toda discrição e segurança necessárias</p>
-    
-                <a href="#"><div class="botao-laranja">Garanta Agora</div></a>
+
+                <p>Profissionais preparados para realizar o serviço desejado no menor prazo, com toda discrição e
+                    segurança necessárias</p>
+
+                <a href="#">
+                    <div class="botao-laranja">Garanta Agora</div>
+                </a>
             </div>
-    
+
             <div class="imagem-mewtwo">
                 <img src="imagens/mewtwo.png" alt="Pokémon chamado Mewtwo.">
             </div>
@@ -187,34 +193,47 @@
             <div class="container2">
                 <div class="caixa-jogos tibia-esquerda">
                     <a href="#"><img class="logo-jogos" src="imagens/logo-tibia.gif" alt="Logo do jogo Tibia."></a>
-    
-                    <a href="#"><h3>Tibia</h3></a>
-    
+
+                    <a href="#">
+                        <h3>Tibia</h3>
+                    </a>
+
                     <p>Diversas quests e compra de KK's e TibiaCoins</p>
-    
-                    <a class="botao-laranja conferir" href="#"><div>Conferir</div></a>
+
+                    <a class="botao-laranja conferir" href="#">
+                        <div>Conferir</div>
+                    </a>
                 </div>
-                
+
                 <div class="caixa-jogos">
                     <a href="#"><img class="logo-jogos" src="imagens/logo-pxg.png" alt="Logo do jogo PokeXGames."></a>
-    
-                    <a href="#"><h3>PxG</h3></a>
-    
+
+                    <a href="#">
+                        <h3>PxG</h3>
+                    </a>
+
                     <p>Services, compra de contas, KK's e level boost</p>
-    
-                    <a class="botao-laranja conferir" href="#"><div>Conferir</div></a>
+
+                    <a class="botao-laranja conferir" href="#">
+                        <div>Conferir</div>
+                    </a>
                 </div>
-    
+
                 <div class="caixa-jogos">
-                    <a href="#"><img class="logo-jogos" src="imagens/logo-lol.png" alt="Logo do jogo Legue of Leagends."></a>
-    
-                    <a href="#"><h3>League of Leagends</h3></a>
-    
+                    <a href="#"><img class="logo-jogos" src="imagens/logo-lol.png"
+                            alt="Logo do jogo Legue of Leagends."></a>
+
+                    <a href="#">
+                        <h3>League of Leagends</h3>
+                    </a>
+
                     <p>Eloboosting, duoboosting e compra de contas</p>
-    
-                    <a class="botao-laranja conferir" href="lol.html"><div>Conferir</div></a>
+
+                    <a class="botao-laranja conferir" href="lol.html">
+                        <div>Conferir</div>
+                    </a>
                 </div>
-                
+
             </div>
 
             <img class="seta-direita seta" src="imagens/seta-direita.png" alt="Seta apondada para a direita.">
@@ -259,7 +278,8 @@
 
                     <h3>SEGURANÇA GARANTIDA</h3>
 
-                    <p>Com experiência no mercado, garantimos que todos os procedimentos de segurança necessários sejam realizados, evitando que sua conta seja suspensa ou banida</p>
+                    <p>Com experiência no mercado, garantimos que todos os procedimentos de segurança necessários sejam
+                        realizados, evitando que sua conta seja suspensa ou banida</p>
                 </div>
 
                 <div class="van-flex van-baixo">
@@ -272,7 +292,8 @@
                     </div>
 
                     <div class="caixa-vantagem profissionalismo">
-                        <img src="imagens/qualidade.png" alt="Uma medalha com uma mão com o polegar pra cima estampada em seu centro.">
+                        <img src="imagens/qualidade.png"
+                            alt="Uma medalha com uma mão com o polegar pra cima estampada em seu centro.">
 
                         <h3>PROFISSIONALISMO</h3>
 
@@ -284,13 +305,16 @@
 
         <section class="caixa-avaliacao-m">
 
-            <a class="aparece" href="avaliacoes.html"><div class="botao-laranja estica">Veja Mais</div></a>
+            <a class="aparece" href="avaliacoes.html">
+                <div class="botao-laranja estica">Veja Mais</div>
+            </a>
 
             <div class="container-bolinhas">
                 <div class="mini-avaliacao">
 
-                    <img class="seta-esquerda-av-demo" src="imagens/seta-esquerda.png" alt="Uma seta apontada para a esquerda.">
-    
+                    <img class="seta-esquerda-av-demo" src="imagens/seta-esquerda.png"
+                        alt="Uma seta apontada para a esquerda.">
+
                     <div class="rolagem-av">
                         <div class="caixa-avaliacao">
                             <div class="caixa-avaliacao-cima">
@@ -305,9 +329,10 @@
                             </div>
                             <div class="caixa-avaliacao-baixo">
                                 <h4>MEWTWO FINAL QUEST</h4>
-        
-                                <p>Fiquei impressionado com a rapidez do serviço e com a habilidade do jogador. Recomendarei aos amigos...</p>
-        
+
+                                <p>Fiquei impressionado com a rapidez do serviço e com a habilidade do jogador.
+                                    Recomendarei aos amigos...</p>
+
                                 <p class="nome">• Gabriel</p>
                             </div>
                         </div>
@@ -324,9 +349,10 @@
                             </div>
                             <div class="caixa-avaliacao-baixo">
                                 <h4>MEWTWO FINAL QUEST</h4>
-        
-                                <p>Fiquei impressionado com a rapidez do serviço e com a habilidade do jogador. Recomendarei aos amigos...</p>
-        
+
+                                <p>Fiquei impressionado com a rapidez do serviço e com a habilidade do jogador.
+                                    Recomendarei aos amigos...</p>
+
                                 <p class="nome">• Gabriel</p>
                             </div>
                         </div>
@@ -343,15 +369,17 @@
                             </div>
                             <div class="caixa-avaliacao-baixo">
                                 <h4>MEWTWO FINAL QUEST</h4>
-        
-                                <p>Fiquei impressionado com a rapidez do serviço e com a habilidade do jogador. Recomendarei aos amigos...</p>
-        
+
+                                <p>Fiquei impressionado com a rapidez do serviço e com a habilidade do jogador.
+                                    Recomendarei aos amigos...</p>
+
                                 <p class="nome">• Gabriel</p>
                             </div>
                         </div>
                     </div>
-    
-                    <img class="seta-direita-av-demo" src="imagens/seta-direita.png" alt="Uma seta apontada para a direita.">
+
+                    <img class="seta-direita-av-demo" src="imagens/seta-direita.png"
+                        alt="Uma seta apontada para a direita.">
                 </div>
 
                 <div class="caixa-bolinhas">
@@ -365,13 +393,16 @@
             <div class="caixa-opiniao">
                 <h2>A OPINIÃO DOS NOSSOS CLIENTES IMPORTA!</h2>
 
-                <p>Nosso maior objetivo é a satisfação plena dos clientes, por isso temos uma página dedicada apenas às avaliações e feedbacks</p>
-                
-                <a href="avaliacoes.html"><div class="botao-laranja desaparece">Veja Mais</div></a>
+                <p>Nosso maior objetivo é a satisfação plena dos clientes, por isso temos uma página dedicada apenas às
+                    avaliações e feedbacks</p>
+
+                <a href="avaliacoes.html">
+                    <div class="botao-laranja desaparece">Veja Mais</div>
+                </a>
             </div>
 
         </section>
-            
+
     </main>
 
     <footer>
@@ -379,8 +410,10 @@
         <div class="footer-area">
             <div class="caixa-footer">
                 <div class="declaracao">
-                    <img class="tipografia-pb" src="imagens/tipografia-PeB.png" alt="GameBooster escrito de forma estilizada.">
-                    <p>A GameBooster© declara que não possui vínculo algum com as empresas responsáveis pelos jogos citados nesta página.</p>
+                    <img class="tipografia-pb" src="imagens/tipografia-PeB.png"
+                        alt="GameBooster escrito de forma estilizada.">
+                    <p>A GameBooster© declara que não possui vínculo algum com as empresas responsáveis pelos jogos
+                        citados nesta página.</p>
                 </div>
 
                 <nav class="opcoes-footer">
@@ -397,7 +430,7 @@
                         <li><a class="brilinho" href="#">Chat Online</a></li>
                         <li><a class="brilinho" href="#">E-mail</a></li>
                     </ul>
-                    
+
                     <ul class="coluna-footer">
                         <li>JOGOS</li>
                         <li><a class="brilinho" href="#">PokeXGames - PxG</a></li>
@@ -412,11 +445,14 @@
                 <p>© 2023 GameBooster Inc. Todos os direitos reservados.</p>
                 <div class="flex-logos-footer">
                     <a href="#"><img class="logos-footer" src="imagens/facebook-logo-b.png" alt="Logo do Facebook."></a>
-                    <a href="#"><img class="logos-footer" src="imagens/instagram-logo-b.png" alt="Logo do Instagram."></a>
+                    <a href="#"><img class="logos-footer" src="imagens/instagram-logo-b.png"
+                            alt="Logo do Instagram."></a>
                     <a href="#"><img class="logos-footer" src="imagens/discord-logo-b.png" alt="Logo do Discord."></a>
                 </div>
             </div>
         </div>
-    </footer>  
+    </footer>
+    <script src="script/login.js" type="module"></script>
 </body>
+
 </html>
