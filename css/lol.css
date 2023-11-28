@@ -103,12 +103,21 @@
     border-bottom: 2px solid #F5F5F5;
 }
 
+[data-theme="light"] .avaliacoes-num p {
+    color: #000;
+    border-bottom: 2px solid #3a3a3a;
+}
+
 .texto-lol h2 {
     margin: 0;
     position: absolute;
     top: 530px;
     font-size: 2rem;
     color: #FFFFFF;
+}
+
+[data-theme="light"] .texto-lol h2 {
+    color: #000;
 }
 
 .adicionais-flex {

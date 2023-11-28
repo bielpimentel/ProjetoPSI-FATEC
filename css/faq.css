@@ -93,6 +93,11 @@
     border-color: #ffffff;
 }
 
+[data-theme="light"] .topicos-faq input[type="radio"]:checked + label > h2  {
+    color: #000;
+    border-color: #1d1d1d;
+}
+
 .topic-tab:hover {
     color: #777777;
     border-color: #777777;

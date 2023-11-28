@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');   
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&family=Inter&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&family=Inter&display=swap');
+
+/* body,
+header,
+footer,
+h1 {
+    transition: background-color 0.5s;
+
+    Bonito...pena que não funcionou como eu queria.
+    Adicionando transição para uma mudança suave de cor 
+}*/
 
 body {
-    background: linear-gradient(180deg, #0c0c0c 1.56%, #2b2b2b 110.39%, rgba(0, 0, 0, 0) 110.4%);
+    /* background: linear-gradient(180deg, #0c0c0c 1.56%, #2b2b2b 110.39%, rgba(0, 0, 0, 0) 110.4%);*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: max-content;
     margin: 0;
@@ -18,14 +28,26 @@ a {
     color: #D9D9D9;
 }
 
-p, ul, h3, h2, h1, input {
+p,
+ul,
+h3,
+h2,
+h1,
+input {
     margin: 0;
     padding: 0;
 }
 
-p, h1, h2, h3, footer ul { /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-    font-family: Cabin; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-    font-style: italic; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+p,
+h1,
+h2,
+h3,
+footer ul {
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+    font-family: Cabin;
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+    font-style: italic;
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
 }
 
 h1 {
@@ -34,19 +56,35 @@ h1 {
     margin: 0;
 }
 
-#botao-login, .servicos, .brilinho, .servico, .menu-ham a, #invisivel-servicos ~ li.container-servicos-2 span {
+#botao-login,
+.servicos,
+.brilinho,
+.servico,
+.menu-ham a,
+#invisivel-servicos~li.container-servicos-2 span {
     transition: text-shadow 0.2s ease;
 }
 
-#botao-login:hover, .servicos:hover, .brilinho:hover, .servico:hover, .menu-ham a:hover, #invisivel-servicos:hover ~ li.container-servicos-2 span {
+#botao-login:hover,
+.servicos:hover,
+.brilinho:hover,
+.servico:hover,
+.menu-ham a:hover,
+#invisivel-servicos:hover~li.container-servicos-2 span {
     text-shadow: #CECECE 1px 0 7px;
 }
 
-.seta, .seta-direita-av-demo, .seta-esquerda-av-demo {         
+.seta,
+.seta-direita-av-demo,
+.seta-esquerda-av-demo {
     transition: 0.2s;
 }
 
-.seta:hover, .seta-direita-av-demo:hover, .seta-esquerda-av-demo:hover, .seta-esquerda-av, .seta-direita-av {
+.seta:hover,
+.seta-direita-av-demo:hover,
+.seta-esquerda-av-demo:hover,
+.seta-esquerda-av,
+.seta-direita-av {
     -webkit-filter: drop-shadow(0px 0px 4px #bbb);
     filter: drop-shadow(0px 0px 4px #bbb);
     cursor: pointer;
@@ -94,7 +132,8 @@ header nav {
 
 .itens-nav {
     font-size: 1.25rem;
-    font-weight: 600; /* ---------- ALTERADO EM 12/09/2023 (Gabriel) ---------- */
+    font-weight: 600;
+    /* ---------- ALTERADO EM 12/09/2023 (Gabriel) ---------- */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -120,7 +159,7 @@ header nav {
 }
 
 .caixa-servicos {
-    background-color:#2F2F2F;
+    background-color: #2F2F2F;
     border-radius: 10px;
     padding-top: 10px;
     visibility: hidden;
@@ -168,7 +207,7 @@ li:hover .caixa-servicos {
 }
 
 .caixa-contas {
-    background-color:#2F2F2F;
+    background-color: #2F2F2F;
     border-radius: 10px;
     padding-top: 10px;
     visibility: hidden;
@@ -200,7 +239,8 @@ li.container-contas:hover .caixa-contas {
     width: 100px;
     height: 62px;
     font-size: 1.25rem;
-    font-weight: 600; /* ---------- ALTERADO EM 12/09/2023 (Gabriel) ---------- */
+    font-weight: 600;
+    /* ---------- ALTERADO EM 12/09/2023 (Gabriel) ---------- */
     color: #D9D9D9;
     border: 3px solid #D9D9D9;
     background-color: #000;
@@ -211,6 +251,12 @@ li.container-contas:hover .caixa-contas {
     align-items: center;
     font-family: Inter, sans-serif;
     transition: box-shadow 0.3s ease;
+}
+
+[data-theme="light"] #botao-login {
+    color: #000;
+    border: 3px solid #000;
+    background-color: #8f8f8f;
 }
 
 #botao-login:hover {
@@ -261,7 +307,7 @@ li.container-contas:hover .caixa-contas {
     z-index: 2;
 }
 
-.menu-ham > div > span {
+.menu-ham>div>span {
     display: block;
     width: 30px;
     height: 3px;
@@ -271,9 +317,9 @@ li.container-contas:hover .caixa-contas {
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
 }
 
 .menu-ham div.fatias span:first-child {
@@ -284,15 +330,15 @@ li.container-contas:hover .caixa-contas {
     transform-origin: 0% 100%;
 }
 
-.menu-ham input:checked ~ div.fatias span:nth-child(1) {
+.menu-ham input:checked~div.fatias span:nth-child(1) {
     transform: rotate(45deg) translateY(-1px) scaleX(1.3);
 }
-  
-.menu-ham input:checked ~ div.fatias span:nth-child(2) {
+
+.menu-ham input:checked~div.fatias span:nth-child(2) {
     transform: rotate(0deg) scale(0);
 }
 
-.menu-ham input:checked ~ div.fatias span:nth-child(3) {
+.menu-ham input:checked~div.fatias span:nth-child(3) {
     transform: rotate(-45deg) translate(-2px, -2px) scaleX(1.3);
 }
 
@@ -309,10 +355,10 @@ li.container-contas:hover .caixa-contas {
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
-.menu > li {
+.menu>li {
     font-size: 1.5rem;
     text-align: start;
     color: #D9D9D9;
@@ -327,7 +373,7 @@ li.container-contas:hover .caixa-contas {
     padding-bottom: 0px;
 }
 
-.menu-ham input:checked ~ ul {
+.menu-ham input:checked~ul {
     transform: none;
 }
 
@@ -395,7 +441,7 @@ li.container-contas:hover .caixa-contas {
     z-index: 3;
 }
 
-.menu .caixa-servicos-2 > li.servicosabcd {
+.menu .caixa-servicos-2>li.servicosabcd {
     font-size: 1.375rem;
     position: absolute;
     left: 60px;
@@ -426,27 +472,27 @@ li.container-contas:hover .caixa-contas {
     transition: transform cubic-bezier(0, 0.09, 1, -0.6) 0.2s;
 }
 
-#invisivel-servicos:checked ~ .container-servicos-2 > ul > li {
+#invisivel-servicos:checked~.container-servicos-2>ul>li {
     transform: translate(0%, 0);
 }
 
-#invisivel-servicos:checked ~ .container-servicos-2 > .caixa-servicos-2 > #servico-a {
+#invisivel-servicos:checked~.container-servicos-2>.caixa-servicos-2>#servico-a {
     transition: transform 0.2s;
 }
 
-#invisivel-servicos:checked ~ .container-servicos-2 > .caixa-servicos-2 > #servico-b {
+#invisivel-servicos:checked~.container-servicos-2>.caixa-servicos-2>#servico-b {
     transition: transform 0.4s;
 }
 
-#invisivel-servicos:checked ~ .container-servicos-2 > .caixa-servicos-2 > #servico-c {
+#invisivel-servicos:checked~.container-servicos-2>.caixa-servicos-2>#servico-c {
     transition: transform 0.5s;
 }
 
-#invisivel-servicos:checked ~ .container-servicos-2 > .caixa-servicos-2 > #servico-d {
+#invisivel-servicos:checked~.container-servicos-2>.caixa-servicos-2>#servico-d {
     transition: transform 0.7s;
 }
 
-#invisivel-servicos:checked ~ .margem {
+#invisivel-servicos:checked~.margem {
     animation-duration: 0.6s;
     animation-name: margem-maior;
     animation-fill-mode: forwards;
@@ -468,7 +514,7 @@ li.container-contas:hover .caixa-contas {
     }
 }
 
-#invisivel-servicos ~ .margem {
+#invisivel-servicos~.margem {
     animation-duration: 1.8s;
     animation-name: margem-menor;
     animation-fill-mode: forwards;
@@ -478,6 +524,7 @@ li.container-contas:hover .caixa-contas {
     from {
         margin: 115px;
     }
+
     to {
         margin: 0;
     }
@@ -536,16 +583,16 @@ li.container-contas:hover .caixa-contas {
 }
 
 
-#servico-d #invisivel-contas:checked ~ .container-contas-2 ul li {
+#servico-d #invisivel-contas:checked~.container-contas-2 ul li {
     transform: translate(0%, 0);
     transition: cubic-bezier(0.46, 0, 0.83, 0);
 }
 
-#servico-d #invisivel-contas:checked ~ .container-contas-2 #conta-a {
+#servico-d #invisivel-contas:checked~.container-contas-2 #conta-a {
     transition: transform 0.3s;
 }
 
-#servico-d #invisivel-contas:checked ~ .container-contas-2 #conta-b {
+#servico-d #invisivel-contas:checked~.container-contas-2 #conta-b {
     transition: transform 0.6s;
 }
 
@@ -586,6 +633,7 @@ li.container-contas:hover .caixa-contas {
     from {
         margin: 50px;
     }
+
     to {
         margin: 0;
     }
@@ -609,14 +657,18 @@ li.container-contas:hover .caixa-contas {
     height: 50px;
     color: #D9D9D9;
     background: #FF2400;
-    font-family: Inter; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-    font-size: 1.15rem; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+    font-family: Inter;
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+    font-size: 1.15rem;
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
     font-weight: bold;
     border-radius: 10px;
-    transition: 150ms; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+    transition: 150ms;
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
 }
 
-#botao-login-ham:hover { /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+#botao-login-ham:hover {
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
     background-color: #B81A00;
     cursor: pointer;
 }
@@ -640,10 +692,11 @@ li.container-contas:hover .caixa-contas {
 
 @keyframes mostrar-login-caixa {
     0% {
-    opacity: 0;
+        opacity: 0;
     }
+
     100% {
-    opacity: 1;
+        opacity: 1;
     }
 }
 
@@ -713,7 +766,8 @@ li.container-contas:hover .caixa-contas {
     padding-left: 10px;
 }
 
-.continuar p, .div-ou p {
+.continuar p,
+.div-ou p {
     margin: 0px;
 }
 
@@ -722,7 +776,8 @@ li.container-contas:hover .caixa-contas {
     margin: 30px auto;
 }
 
-.email-senha, .confirmar {
+.email-senha,
+.confirmar {
     max-width: 324px;
     margin: 0 auto;
 }
@@ -824,7 +879,8 @@ li.container-contas:hover .caixa-contas {
     justify-content: space-evenly;
 }
 
-.seta-esquerda-av-demo, .seta-direita-av-demo {
+.seta-esquerda-av-demo,
+.seta-direita-av-demo {
     max-width: 100%;
     height: 60px;
     cursor: pointer;
@@ -866,7 +922,12 @@ li.container-contas:hover .caixa-contas {
     margin: 0 20px 0 8px;
 }
 
-.caixa-avaliacao:hover { /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+[data-theme="light"] .caixa-avaliacao {
+    border: 4px solid #333;
+}
+
+.caixa-avaliacao:hover {
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
     box-shadow: 0px 0px 9px 0px #bbbbbb;
 }
 
@@ -881,9 +942,18 @@ li.container-contas:hover .caixa-contas {
     background-color: #D9D9D9;
 }
 
+[data-theme="light"] .caixa-avaliacao-cima {
+    background-color: #333;
+    color: #000;
+}
+
 .caixa-avaliacao-cima h3 {
     font-size: 1.75rem;
     margin: 15px 0 10px 0;
+}
+
+[data-theme="light"] .caixa-avaliacao-cima h3 {
+    color: #ffffff;
 }
 
 .caixa-avaliacao-cima .caixa-estrelas {
@@ -905,10 +975,18 @@ li.container-contas:hover .caixa-contas {
     margin: 30px 20px 0 20px;
 }
 
+[data-theme="light"] .caixa-avaliacao-baixo h4 {
+    color: #000;
+}
+
 .caixa-avaliacao-baixo p {
     font-size: 1.25rem;
     color: #A5A5A5;
     margin: 0 20px;
+}
+
+[data-theme="light"] .caixa-avaliacao-baixo p {
+    color: #333;
 }
 
 .aparece {
@@ -931,10 +1009,23 @@ li.container-contas:hover .caixa-contas {
     margin-bottom: 20px;
 }
 
+[data-theme="light"] .caixa-opiniao h2 {
+    color: #333;
+}
+
+[data-theme="light"] .caixa-jogos {
+    background-color: #000;
+    color: #D9D9D9;
+}
+
 .caixa-opiniao p {
     font-size: 1.5rem;
     color: #A5A5A5;
     margin-bottom: 40px;
+}
+
+[data-theme="light"] .caixa-opiniao p {
+    color: #333;
 }
 
 .caixa-bolinhas {
@@ -978,7 +1069,7 @@ li.container-contas:hover .caixa-contas {
     top: -0.45em;
     left: -0.65em;
     display: block;
-    content:"";
+    content: "";
     transform: rotate(-35deg);
 }
 
@@ -993,7 +1084,7 @@ li.container-contas:hover .caixa-contas {
     border-bottom: 0.7em solid var(--star-color);
     border-left: 1em solid transparent;
     transform: rotate(-70deg);
-    content:"";
+    content: "";
 }
 
 /* Footer */
@@ -1005,7 +1096,8 @@ footer {
 
 .footer-area {
     height: auto;
-    max-width: 1260px; /* ---------- ALTERADO EM 12/09/2023 (Gabriel) ---------- */
+    max-width: 1260px;
+    /* ---------- ALTERADO EM 12/09/2023 (Gabriel) ---------- */
     margin: 0 auto;
     padding-top: 60px;
 }
@@ -1041,6 +1133,10 @@ footer {
     color: #707070;
 }
 
+[data-theme="light"] .caixa-footer p {
+    color: #ffffff;
+}
+
 p {
     color: #A5A5A5;
 }
@@ -1049,33 +1145,46 @@ p {
     color: #FFF;
     font-size: 1.375rem;
     padding-bottom: 15px;
-    font-weight: bold; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+    font-weight: bold;
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
 }
 
 .coluna-footer li {
     padding-bottom: 10px;
-} 
-
-.coluna-footer li .brilinho:hover {  /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-    text-shadow: #7c7c7c 0 0 7px; 
 }
 
-footer a{
-    color: #707070; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+.coluna-footer li .brilinho:hover {
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+    text-shadow: #7c7c7c 0 0 7px;
+}
+
+footer a {
+    color: #707070;
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
     font-size: 1.25rem;
+}
+
+[data-theme="light"] footer a {
+    color: #ffffff;
 }
 
 .footer-final {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+    justify-content: space-between;
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
     padding: 25px 0 30px 0;
 }
 
 .footer-final p {
     margin: 0;
-    color: #707070; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+    color: #707070;
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+}
+
+[data-theme="light"] .footer-final p  {
+    color: #fff;
 }
 
 .flex-logos-footer {
@@ -1087,11 +1196,14 @@ footer a{
 
 .logos-footer {
     flex-shrink: 0;
-    transition: 150ms; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+    transition: 150ms;
+    /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
 }
 
+
+
 .logos-footer:hover {
-    filter: opacity(0.4) drop-shadow(0 0 #FF2400);     
+    filter: opacity(0.4) drop-shadow(0 0 #FF2400);
 }
 
 /* Responsivo */
@@ -1118,7 +1230,7 @@ footer a{
 
     /* Footer */
 
-    .caixa-footer{
+    .caixa-footer {
         /* flex-direction: column; */
         padding-bottom: 30px;
         max-width: 900px;
@@ -1147,7 +1259,8 @@ footer a{
         margin: 0 auto;
     }
 
-    .opcoes-footer, .declaracao {
+    .opcoes-footer,
+    .declaracao {
         margin: 0 15px;
     }
 
@@ -1256,7 +1369,8 @@ footer a{
         height: 450px;
     }
 
-    .seta-esquerda-av-demo, .seta-direita-av-demo {
+    .seta-esquerda-av-demo,
+    .seta-direita-av-demo {
         display: none;
     }
 
@@ -1279,6 +1393,7 @@ footer a{
     .container-header {
         max-width: 300px;
     }
+
     .logo-header {
         margin-left: 9px;
     }
@@ -1312,15 +1427,15 @@ footer a{
     #servico-a {
         top: 165px;
     }
-    
+
     #servico-b {
         top: 205px;
     }
-    
+
     #servico-c {
         top: 245px;
     }
-    
+
     #servico-d {
         top: 285px;
     }
@@ -1364,4 +1479,67 @@ footer a{
     .footer-final {
         max-width: 260px;
     }
+}
+
+
+/* ATRIBUTOS PARA A MUDANÇA DE ESTILO NO SITE*/
+
+/* Estilos para o tema light */
+[data-theme="light"] {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilos para o tema dark */
+[data-theme="dark"] {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+[data-theme="light"] header {
+    background-color: #8f8f8f;
+    color: #fff;
+}
+
+[data-theme="light"] header a{
+    color: #fff;
+}
+
+[data-theme="dark"] header {
+    background-color: #000;
+}
+
+[data-theme="light"] footer {
+    background-color: #8f8f8f;
+}
+
+[data-theme="dark"] footer {
+    background-color: #000;
+    color: #fff;
+}
+
+[data-theme="light"] body {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+[data-theme="dark"] body {
+    background-color: #333;
+    color: #fff;
+}
+
+[data-theme="light"] h1 {
+    color: #000;
+}
+
+#theme-button{
+    background-color: #333;
+    border-radius: 5%;
+    border: none;
+    color: #D9D9D9;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 15px;
 }
